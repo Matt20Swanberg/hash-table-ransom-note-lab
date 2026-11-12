@@ -1,6 +1,12 @@
 
 from ransom_note import can_construct
 
+# Display a formatted header to distinguish the test suite output
+# from other terminal messages
+print ('**********************************')
+print('Starting Test Suite')
+print ('**********************************\n')
+
 def run_test(ransomNote, magazine, expected):
     result = can_construct(ransomNote, magazine)
     print(f"Testing: can_construct({ransomNote!r}, {magazine!r})")
